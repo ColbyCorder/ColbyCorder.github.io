@@ -1,0 +1,5 @@
+#F5223F - Red
+#0C1026 - Navy/Black
+#0CF0E4 - Cyan
+#FFF7FD - Off White
+49, 46, 197, 0.75 - rgba purple blue

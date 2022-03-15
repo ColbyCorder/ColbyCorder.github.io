@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0C1026;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* FONT AWESOME */
+i {
+    font-size: 2em;
+    color: #F5223F;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a{
+    transition: .3s;
+    color: #FFF7FD;
+}
+
+.nav-area li a:hover{
+    color: #0CF0E4;
+}
+
+/* Background Elements */
+#light{
+    position: absolute;
+    top: -10%;
+    left: 32%;
+    align-items: center;
+}
+
+#wooden-table{
+    position: absolute;
+    bottom: -5%;
+    left: 32.5%;
+}
+
+/* Button */
+.container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container h1{
+    color: #FFF7FD;
+    font-size: 36;
+    margin-bottom: 40px;
+}
+
+.button{
+    background: #F5223F;
+    padding: 10px 15px;
+    color:#FFF7FD;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+.button:hover{
+    background-color: #0CF0E4;
+    color: #0C1026
+}
+
+.container2{
+    position: absolute;
+    bottom: -5%;
+    left: 36%;
+}
+
+.container2 h2{
+    color: #FFF7FD;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container2 h3{
+    color: #FFF7FD;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background-color: #222a5a;
+    text-align: center;
+    color: #FFF7FD;
+    position: relative;
+    top: 95%;
+    padding: 10px;
+}
+
+footer div{
+    letter-spacing: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+footer i:hover{
+    color:#FFF7FD;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) and (min-height:667px) and (max-height:900px) {
+    header{
+        background-color: #F5223F;
+        width: 175%;
+    }
+    header i{
+        color: #0C1026;
+    }
+    #light{
+        height: 250px;
+        width: 275px;
+        top: 13%;
+        left: 28%;
+    }
+    #wooden-table{
+        height: 300px;
+        width: 300px;
+    }
+    footer{
+        background-color: #0C1026;
+        position: relative;
+        width: 175%;
+        top: 667px;
+        right: 75px;
+    }
+}

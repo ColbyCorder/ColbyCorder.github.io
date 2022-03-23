@@ -7,12 +7,14 @@
 
 body {
     background-color: #0C1026;
+    background-image: url(website_background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
+    text-align: center;
 }
 
 a{
@@ -52,20 +54,6 @@ header {
     color: #0CF0E4;
 }
 
-/* Background Elements */
-#light{
-    position: absolute;
-    top: -10%;
-    left: 32%;
-    align-items: center;
-}
-
-#wooden-table{
-    position: absolute;
-    bottom: -5%;
-    left: 32.5%;
-}
-
 /* Button */
 .container{
     position: absolute;
@@ -101,8 +89,9 @@ header {
 
 .container2{
     position: absolute;
-    bottom: -5%;
+    bottom: -9%;
     left: 36%;
+    text-align: center;
 }
 
 .container2 h2{
@@ -138,29 +127,18 @@ footer i:hover{
     color:#FFF7FD;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
-    header{
-        background-color: #F5223F;
-        width: 175%;
-    }
-    header i{
-        color: #0C1026;
-    }
-    #light{
-        height: 250px;
-        width: 275px;
-        top: 13%;
-        left: 28%;
-    }
-    #wooden-table{
-        height: 300px;
-        width: 300px;
+small {
+    font-size: 15px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1120px) {
+    .container2{
+        position: absolute;
+        bottom: -9%;
+        right: 35%;
     }
     footer{
-        background-color: #0C1026;
-        position: relative;
-        width: 175%;
-        top: 667px;
-        right: 75px;
+        margin-top: 10px;
     }
 }

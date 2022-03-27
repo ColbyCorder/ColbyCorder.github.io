@@ -27,6 +27,10 @@ i {
     color: #F5223F;
 }
 
+i:hover{
+    color: #0CF0E4;
+}
+
 /* NAVBAR */
 header {
     display: flex;

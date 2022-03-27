@@ -37,11 +37,11 @@ function randomNum(){
         } else if (ranNum === 12|| ranNum===13){
             alert(`You rolled a "${ranNum}". You're going to be just fine`);
         } else if (ranNum === 14|| ranNum===15){
-            alert(`You rolled a "${ranNum}". Alright, that's good, keep up the good work.`);
-        } else if (ranNum === 16|| ranNum===17){
             alert(`You rolled a "${ranNum}". You must be having a fairly decent day.`);
+        } else if (ranNum === 16|| ranNum===17){
+            alert(`You rolled a "${ranNum}". Alright, that's good, keep up the good work.`);
         } else if (ranNum === 18 || ranNum===19){
-            alert(`You rolled a "${ranNum}". Your day is going to be great. Keep up the good work.`);
+            alert(`You rolled a "${ranNum}". Your day is going to be great, you're a cool cat.`);
         } else{
             alert(`AMAZING!!! YOU ROLLED A "${ranNum}" YOU ARE GONNA HAVE A AWESOME DAY!!!`);
         }

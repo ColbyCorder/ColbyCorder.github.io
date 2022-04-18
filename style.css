@@ -40,6 +40,7 @@ i:hover{
     align-items: center;
     background-color: #333;
     color: white;
+    z-index: 1;
 }
 
 .logo {

@@ -32,31 +32,87 @@ i:hover{
 }
 
 /* NAVBAR */
-header {
+
+.navbar {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 70px;
+    background-color: #333;
+    color: white;
 }
 
-.nav-area{
+.logo {
+    font-size: .60rem;
+    margin: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
     list-style: none;
 }
 
-.nav-area li{
-    display: inline-block;
-    padding: 0 15px;
-    text-transform: uppercase;
-}
-
-.nav-area li a{
-    transition: .3s;
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
     color: #FFF7FD;
+    padding: 1rem;
 }
 
-.nav-area li a:hover{
-    color: #0CF0E4;
+.navbar-links li:hover {
+    background-color: #F5223F;
 }
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #FFF7FD;
+    border-radius: 10px;
+}
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .tab.active {
+    background-color: #222a5a;
+  }
+  
+  .tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
 /* Button */
 .container{
@@ -71,7 +127,7 @@ header {
 .container h1{
     color: #FFF7FD;
     font-size: 36;
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
 }
 
 .container h2{
@@ -127,13 +183,38 @@ small {
 }
 
 /* Mobile */
-@media only screen and (max-width: 1120px) {
-    .container2{
-        position: absolute;
-        bottom: -9%;
-        right: 35%;
+@media (max-width: 800px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    footer{
-        margin-top: 10px;
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }

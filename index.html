@@ -24,27 +24,51 @@
 THANKS FOR VISITING MY PAGE! YOU'RE A COOL CAT!!!
                     -->
     <!-- Navbar -->
-    <header>
-        <a href="#"><i class="fa-solid fa-dice-d20" onclick="randomNum()"> Colby Corder's Website</i></a>
-        <br>
-        <nav>
-            <ul id="navbar" class="nav-area">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" onclick="aboutMe()">About Me</a></li>
-                <li><a href="#" onclick="project()">Projects</a></li>
-                <li><a href="#" onclick="resume()">Resume</a></li>
-                <li><a href="#" onclick="contact()">Contact</a></li>
-            </ul>
-        </nav>
-    </header>   
-
-    <!-- Button -->
     
-    <div class="container">
-        <h1>Hmm...I wonder what would happen if you click the button below</h1>
-        <h2>(Or not, it's your life. I'm not telling you what to do)</h2>
-        <h3>¯\_(ツ)_/¯</h3>
-        <a href="#" class="button" onclick="myFunction()">Click Here</a>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-dice-d20" onclick="randomNum()"> Colby Corder's Website</i></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li data-tab-target="#home" class="active tab"><a href="#">Home</a></li>
+                <li data-tab-target="#about" class="tab"><a href="#">About Me</a></li>
+                <li data-tab-target="#projects" class="tab"><a href="#">Projects</a></li>
+                <li data-tab-target="#resume" class="tab"><a href="#">Resume</a></li>
+                <li data-tab-target="#contact" class="tab"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content goes in Tabs -->
+
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <div class="container">
+                <h1>Hmm...I wonder what would happen if you click the button below</h1>
+                <h2>(Or not, it's your life. I'm not telling you what to do)</h2>
+                <h3>¯\_(ツ)_/¯</h3>
+
+                <!-- BUTTON -->
+
+                <a href="#" class="button" onclick="myFunction()">Click Here</a>
+            </div>
+        </div>
+        <div id="projects" data-tab-content>
+            <h1>Projects</h1>
+            <p>Some information on projects</p>
+        </div>
+        <div id="resume" data-tab-content>
+            <h1>Resume</h1>
+            <p>Let me tell you about me</p>
+        </div>
+        <div id="contact" data-tab-content>
+            <h1>Contact</h1>
+            <p>Let me give you my number</p>
+        </div>
     </div>
     <br>
     <footer>
